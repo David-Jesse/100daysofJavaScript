@@ -23,8 +23,18 @@
 
         var foods = ['rice', 'bread', 'plantain', 'meat'];
         var myString = 'I am really hungry for some';
+
         for(i=0; i<foods.length; i++){
-        console.log(`${myString} ${foods[i]}`);
+
+            // checking to see if the incrementor is even!
+            if(i % 2 === 0){
+                // if its even, make the array element uppercase
+                console.log(`${myString} ${foods[i].toUpperCase()} \n`);
+            }
+            else{
+                // if its odd, keep it lowercase
+                console.log(`${myString} ${foods[i]} \n`);
+            }
         }
 
     </script>
