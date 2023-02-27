@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Loops</title>
+</head>
+<body>
+    <h1>Loops in JS</h1>
+    <script>
+
+        for(i=0; i<=10; i++){
+            console.log(i);
+        }
+
+        var colors = ['red', 'blue', 'yellow', 'green'];
+
+        for(var i=0; i<colors.length; i++){
+            console.log(colors[i]);
+        }
+
+        var fruits = ['grapes', 'apples', 'oranges', 'olives']
+        for(var eachFruit of fruits){
+            console.log(eachFruit);
+        }
+
+        // var statement = 'A string can be treated like an array'
+        // for(var i=0; i<statement.length; i++){
+        //     console.log(statement[i]);
+        // }
+        // for(var eachWord of statement){
+        //     console.log(eachWord)
+        // }
+        
+        // var incrementor = 0;
+        // var text = '';
+
+        // while(incrementor < 10){
+        //     text += `The incrementor has gone up to ${incrementor}\n`;
+        //     incrementor++;
+        // }
+        // console.log(text);
+
+        // var i = 1;
+        // var text = '';
+
+        // while(i<10){
+        //     text += `The incrementor is ${i}, and squared it is ${i * i} \n`;
+        //     i++;
+        // }
+        // console.log(text);
+
+        var myString = "I am really hungry for some chicken";
+        console.log(myString);
+
+        var myUpperString = myString.toUpperCase();
+        console.log(myUpperString);
+
+    </script>
+</body>
+</html>
