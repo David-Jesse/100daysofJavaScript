@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <!-- <p id="one">Here is a paragraph with a unique ID</p> -->
+    <!-- <p>Here is a paragraph</p>
+    <p>Here is another paragraph of text</p>
+    <p>And another one</p> -->
+
+    <!-- <p class="boy">I am a boy and I really like girls</p>
+    <p> Jesse is a sweet boy</p>
+    <p class="boy">Girls are an interesting creature if we are being honest</p> -->
+
+    <div id="special">
+        <p class="hey">Here is a paragraph of text</p>
+        <p>Here is another paragraph</p>
+        <p>Here is another paragraph of text</p>
+    </div>
+    <script>
+        // document.getElementById('one').style.color = 'red';
+        // var myTexts = document.getElementsByTagName('p');
+        
+        // for(var i = 0; i<myTexts.length; i++){
+        //     myTexts[i].style.color = 'red';
+        //     alert(`showing paragraph ${i} channging`);
+        // }
+
+        // var myClass = document.getElementsByClassName('boy')
+
+        // for(var i=0; i<myClass.length; i++){
+        //     myClass[i].style.color = 'blue';
+        // }
+
+        // For querySelector you have to remember that you are passing in the CSS syntax
+        var myText = document.querySelector('#special .hey');
+        myText.style.color = 'green';
+        
+    </script>
+</body>
+</html>
