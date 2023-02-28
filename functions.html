@@ -62,7 +62,24 @@
         }
 
         // console.log(returnSum(44, 40));
-        console.log(Math.random());
+        // console.log(Math.random());
+
+        var foods = ['chicken', 'turkey', 'spaghetti', 'rice', 'plantain']
+
+        function randomInt(min, max){
+
+            // var numOfValues = max - min + 1;
+            // var randomNum = Math.random();
+            // var randomNum = Math.random(numOfValues)
+            // var randomVal = randomNum * numOfValues;
+            // var roundedRandomVal = Math.floor(randomVal);
+            // var finalNum = min + roundedRandomVal;
+
+            // Creating a random integer from min and max
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        console.log(foods[randomInt(0, 4)]);
 
     </script>
 </body>
