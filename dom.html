@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Examples</title>
+    <style>
+        .blue {color: blue; }
+    </style>
 </head>
 <body>
     <h1>DOM Examples</h1>
@@ -17,11 +20,21 @@
     <p> Jesse is a sweet boy</p>
     <p class="boy">Girls are an interesting creature if we are being honest</p> -->
 
-    <div id="special">
-        <p class="hey">Here is a paragraph of text</p>
+    <!-- <div id="special">
+        <p>Here is a paragraph of text</p>
         <p>Here is another paragraph</p>
         <p>Here is another paragraph of text</p>
+    </div> -->
+
+    <!-- <form action="check">
+        <label><input type="checkbox">YES!</label>
+    </form> -->
+
+    <div>
+        <p>This is the first paragraph on this page</p>
+        <p>Remove this paragraph</p>
     </div>
+
     <script>
         // document.getElementById('one').style.color = 'red';
         // var myTexts = document.getElementsByTagName('p');
@@ -38,9 +51,37 @@
         // }
 
         // For querySelector you have to remember that you are passing in the CSS syntax
-        var myText = document.querySelector('#special .hey');
-        myText.style.color = 'green';
-        
-    </script>
+        // var myText = document.querySelectorAll('#special p');
+        // for(var i=0; i<myText.length; i++){
+        //     myText[i].style.color = 'green';
+        // }
+
+        // document.getElementById('special').innerHTML = "<p>Here is a paragraph i just created using JS</p>"
+
+        // var firstPara = document.querySelector('p');
+        // firstPara.className = 'blue';
+
+     //     var myCheckbox = document.querySelector('input');
+    //     myCheckbox.setAttribute('checked', 'checked');
+
+            // var myTag = document.createElement('p');
+            // var myText = document.createTextNode('Here is a new text for a new pragraph');
+            // myTag.appendChild(myText);
+            // var myDiv = document.querySelector('div');
+            // myDiv.appendChild(myTag);
+
+            // var myPara = document.createElement('p');
+            // var text = document.createTextNode('Hey I am red!');
+            // myPara.appendChild(text);
+            // var myDiv = document.querySelector('div');
+            // myDiv.appendChild(myPara)
+            // for(var i=0; i<text.length; i++){
+            //     myDiv[i].style.color = 'red'
+            // }
+
+            var myDiv = document.querySelector('div')
+            myDiv.removeChild(myDiv.children[1]);
+            
+     </script>
 </body>
 </html>
