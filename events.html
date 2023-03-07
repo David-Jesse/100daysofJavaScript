@@ -8,17 +8,24 @@
 </head>
 <body>
     <h1>JavaScript Events</h1>
+
     <button>Don't Press me</button>
 
     <script>
 
         var btn = document.querySelector('button');
 
-        function ouch(){
-            alert("Oh no you didn't!")
-        }
+        // btn.addEventListener('click', function() { 
+        //     alert("How dare you!");
+        //  });
 
-        btn.onclick = Ouch;
+         // Targetting events
+         btn.addEventListener('click', function(event){
+
+            alert('Green alert');
+            
+            event.target.style.backgroundColor = 'green';
+         })
 
     </script>
 </body>
